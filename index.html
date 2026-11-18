@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koala Cozy: Oddly Satisfying</title>
+<meta name="description" content="Scrape, pop, peel and polish. 320 calm little tasks that melt the stress away. A cozy game for Android by Koala Cozy.">
+<meta property="og:title" content="Koala Cozy: Oddly Satisfying">
+<meta property="og:description" content="Scrape, pop, peel and polish. Calm little tasks that melt the stress away.">
+<meta property="og:image" content="img/hero.webp">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fff7e8; --card:#fffdf8; --ink:#3b2a20; --soft:#6d5444; --wood:#8a5a3b;
+    --leaf:#6e9e7a; --leaf-dark:#4f7d5b; --line:#ecdcc2; --gold:#c9a96a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --cream:#1d1712; --card:#2a211a; --ink:#f4e9d8; --soft:#cdb8a2; --wood:#e0a77a;
+      --leaf:#86b893; --leaf-dark:#9fcaa9; --line:#3d3027;
+    }
+  }
+  :root[data-theme="dark"]{
+    --cream:#1d1712; --card:#2a211a; --ink:#f4e9d8; --soft:#cdb8a2; --wood:#e0a77a;
+    --leaf:#86b893; --leaf-dark:#9fcaa9; --line:#3d3027;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--cream); color:var(--ink);
+        font:17px/1.6 Nunito, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a{ color:var(--wood); }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 16px; }
+  header{ padding:20px 0 0; display:flex; align-items:center; gap:10px; }
+  header img{ width:36px; height:36px; border-radius:8px; background:#0d0d0d; }
+  header span{ font:600 15px Fredoka, sans-serif; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); }
+  .hero{ margin-top:18px; border-radius:22px; overflow:hidden; box-shadow:0 10px 30px rgba(60,35,15,.18); }
+  .hero img{ display:block; width:100%; height:auto; }
+  h1{ font:600 clamp(30px, 7vw, 44px)/1.15 Fredoka, sans-serif; margin:28px 0 8px; }
+  .pitch{ font-size:19px; color:var(--soft); margin:0 0 22px; }
+  .play{ display:inline-flex; align-items:center; gap:12px; padding:12px 22px; border-radius:14px;
+         background:#111; color:#fff; text-decoration:none; border:1px solid rgba(255,255,255,.22); font:600 17px Fredoka, sans-serif; }
+  .play small{ display:block; font:700 11px Nunito, sans-serif; letter-spacing:.08em; text-transform:uppercase; opacity:.75; }
+  .play svg{ width:26px; height:26px; flex:none; }
+  .play[aria-disabled="true"]{ cursor:default; }
+  .features{ list-style:none; padding:0; margin:34px 0; display:grid; gap:12px;
+             grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); }
+  .features li{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 18px; }
+  .features b{ display:block; font:600 18px Fredoka, sans-serif; color:var(--leaf-dark); margin-bottom:2px; }
+  .koala{ display:flex; align-items:center; gap:18px; background:var(--card); border:1px solid var(--line);
+          border-radius:18px; padding:16px 20px; margin:0 0 34px; }
+  .koala img{ width:110px; height:110px; flex:none; }
+  .koala p{ margin:0; }
+  h2{ font:600 22px Fredoka, sans-serif; margin:0 0 12px; }
+  .social{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:40px; }
+  .social a{ display:inline-flex; align-items:center; gap:8px; padding:9px 16px; border-radius:999px;
+             border:1.5px solid var(--line); background:var(--card); text-decoration:none; color:var(--ink); font-weight:700; }
+  .social svg{ width:18px; height:18px; fill:currentColor; }
+  footer{ border-top:1px solid var(--line); padding:20px 0 40px; font-size:15px; color:var(--soft);
+          display:flex; flex-wrap:wrap; gap:8px 20px; }
+  @media (max-width:520px){ .koala{ flex-direction:column; text-align:center; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="img/studio.png" alt=""><span>Koala Cozy</span></header>
+
+  <div class="hero"><img src="img/hero.webp" width="660" height="385"
+       alt="A koala in sunglasses sipping bubble tea next to a pop-it toy, a sand tray and a jar of coloured sand"></div>
+
+  <h1>Koala Cozy: Oddly Satisfying</h1>
+  <p class="pitch">Scrape, pop, peel and polish. Calm little tasks that melt the stress away.</p>
+
+  <!-- When the game is live (or pre-registration opens): set href to
+       https://play.google.com/store/apps/details?id=com.koalacozy.oddlysatisfying,
+       remove aria-disabled and change "Coming soon to" to "Get it on". -->
+  <a class="play" aria-disabled="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34a853" d="M3.6 2.2 13.4 12l-9.8 9.8c-.4-.2-.6-.7-.6-1.2V3.4c0-.5.2-1 .6-1.2z"/><path fill="#fbbc04" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.9-2.2c.8-.5.8-1.7 0-2.2z"/><path fill="#4285f4" d="M3.6 2.2c.3-.2.8-.2 1.2 0l12 6.4-3.4 3.4z"/><path fill="#ea4335" d="m13.4 12 3.4 3.4-12 6.4c-.4.2-.9.2-1.2 0z"/></svg>
+    <span><small>Coming soon to</small>Google Play</span>
+  </a>
+
+  <ul class="features">
+    <li><b>320 levels</b>Slice kinetic sand, pop bubble wrap, peel the film off something new, wipe a window clean.</li>
+    <li><b>No timer, no failing</b>One task with your finger, then something clean, smooth or finished. Play one or lose an evening.</li>
+    <li><b>Made over scenes</b>Bring old places back to life task by task, then watch the big reveal.</li>
+    <li><b>Koala games</b>Little arcade games, a toy box and a valley that fills up with what you find.</li>
+  </ul>
+
+  <div class="koala">
+    <img src="img/koala.webp" width="240" height="240" alt="The koala lounging in a deckchair">
+    <p>No account, no sign-up. Your progress stays on your phone. Made for players aged 13 and over.</p>
+  </div>
+
+  <h2>Follow the koala</h2>
+  <div class="social">
+    <a href="https://www.tiktok.com/@koalacozygames" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.3v13.3a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.5 4.5 0 0 1-4.4-4.7z"/></svg>TikTok</a>
+    <a href="https://www.instagram.com/koalacozygames" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 2c-2.7 0-3 0-4.1.1C4.3 2.2 2.2 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.6 2.2 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.1 5.7-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.6-2.2-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1-.1-1.3-.1-4s0-3 .1-4C4 5.3 5.3 4 8 3.9c1-.1 1.3-.1 4-.1z"/></svg>Instagram</a>
+    <a href="https://www.youtube.com/@koalacozygames" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z"/></svg>YouTube</a>
+  </div>
+
+  <footer>
+    <span>© 2026 Koala Cozy</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="mailto:koalacorner.games@gmail.com">koalacorner.games@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
